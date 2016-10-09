@@ -11,5 +11,3 @@ RUN wget -c $GF_DOWNLOAD_URL -O /tmp/geofence.zip \
     && unzip /tmp/gui/web/target/geofence.war -d /usr/local/tomcat/webapps/geofence \
     && wget -c $PG_SPATIAL_DOWNLOAD_URL -O /usr/local/tomcat/webapps/geofence/WEB-INF/lib/hibernate-spatial-postgis-1.1.1.jar \
     && rm -rf /tmp/*
-
-CMD ["catalina.sh","run"]
