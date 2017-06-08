@@ -20,13 +20,13 @@ Should the default H2 database be preferred, please remove lines #12 & #13 from 
 
    `$ docker build -t geofence:3.3.0` 
    
-   or 
+   OR 
    
    `$ docker-compose build`
 
 ### Run
 `$ docker run -d --name geofence -p 8080:8080 -v $(pwd)/geofence-datasource-ovr.properties:/usr/local/tomcat/webapps/geofence/WEB-INF/classes/geofence-datasource-ovr.properties geofence:3.3.0` 
 
-or 
+OR 
 
-`docker-compose up -d`
+`$ docker-compose up -d`
