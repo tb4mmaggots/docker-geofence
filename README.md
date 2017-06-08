@@ -30,3 +30,7 @@ Should the default H2 database be preferred, please remove lines #12 & #13 from 
 OR 
 
 `$ docker-compose up -d`
+
+### Automated Build
+
+`$ docker pull tb4mmaggots/geofence`
