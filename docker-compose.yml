@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  geofence:
+    container_name: geofence
+    build: .
+    volumes:
+      - "./geofence-datasource-ovr.properties:/usr/local/tomcat/webapps/geofence/WEB-INF/classes/geofence-datasource-ovr.properties"
+    ports:
+      - "8000:8080"
